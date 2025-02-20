@@ -13,7 +13,7 @@ from telegram.ext import Application, CommandHandler, CallbackContext, CallbackQ
 from selenium.common.exceptions import TimeoutException
 
 # TOKEN TELEGRAM
-TELEGRAM_TOKEN = "7519157794:AAFDYY01ccqS1wtPOy_3KGvr-4jFnVlSNo8"
+TELEGRAM_TOKEN = "yourtoken"
 
 # Variabile globale per gestire lo stato del bot (continuare o fermarsi)
 bot_attivo = True
@@ -109,7 +109,7 @@ async def cerca(update: Update, context: CallbackContext) -> None:
     chrome_options.add_argument('--headless')  # Esegui Chrome in background
     chrome_options.add_argument('--disable-gpu')  # Disabilita la GPU per evitare errori
 
-    service = Service("C:/Users/gerar/Desktop/chromedriver/chromedriver.exe")
+    service = Service("path_chromedriver")
     driver = webdriver.Chrome(service=service, options=chrome_options)
 
     driver.get(url_vinted)
