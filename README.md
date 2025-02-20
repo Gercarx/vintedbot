@@ -21,4 +21,4 @@ Un bot Telegram che cerca articoli su Vinted e li invia automaticamente.
 ## Installazione
 1. Clona questo repository:
    ```bash
-   git clone https://github.com/Gercarx/VintedBot.git
+ https://github.com/Gercarx/vintedbot/blob/main/vintedbot.py
